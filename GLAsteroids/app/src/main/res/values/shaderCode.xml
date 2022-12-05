@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="vertex_shader">
+     """
+    uniform mat4 modelViewProjection;  // A constant representing the combined model/view/projection matrix.
+    attribute vec4 position;  // Per-vertex position information that we will pass in.
+    void main() {             // The entry point for our vertex shader.
+        gl_Position = modelViewProjection  // gl_Position is a special variable used to store the final position.
+            * position;       // Multiply the vertex by the matrix to get the final point in normalized screen coordinates.
+        gl_PointSize = 4.5; //pixel width of points
+    }
+"""
+    </string>
+
+    <string name="fragment_shader">
+"""
+    precision mediump float;    //we don't need high precision floats for fragments
+    uniform vec4 color;         // a constant color to apply to all pixels
+    void main() {               // The entry point for our fragment shader.
+        gl_FragColor = color;   // Pass the color directly through the pipeline.
+    }
+"""
+    </string>
+
+
+</resources>

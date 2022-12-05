@@ -1,0 +1,6 @@
+name;value;type
+_asteroidToDestroy;3;int
+_asteroidTargetAmount;10;int
+_tryToSpawnEnemy;0;float
+_chanceOfSpawningEnemy;0;float
+_maxAmountOfEnemies;0;int

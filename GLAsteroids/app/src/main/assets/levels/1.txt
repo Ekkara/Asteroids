@@ -1,0 +1,6 @@
+level: 1
+_asteroidToDestroy{8}
+_asteroidTargetAmount{15}
+_tryToSpawnEnemy{5}
+_chanceOfSpawningEnemy{12}
+_maxAmountOfEnemies{1}
